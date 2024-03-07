@@ -50,14 +50,14 @@ unset(_cmake_expected_targets)
 add_library(spirv-cross-reflect STATIC IMPORTED)
 
 set_target_properties(spirv-cross-reflect PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/philip/coding/RavenEngine/vendor/spirv_cross"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/philip/coding/Crow-Works/Raven-Dependency-Repo/spirv_cross"
 )
 
 # Import target "spirv-cross-reflect" for configuration "Release"
 set_property(TARGET spirv-cross-reflect APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(spirv-cross-reflect PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/philip/coding/RavenEngine/lib-Release/libspirv-cross-reflect.a"
+  IMPORTED_LOCATION_RELEASE "/home/philip/coding/Crow-Works/Raven-Dependency-Repo/spirv_cross/libspirv-cross-reflect.a"
   )
 
 # This file does not depend on other imported targets which have

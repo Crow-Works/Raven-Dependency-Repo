@@ -1,4 +1,4 @@
-# Install script for directory: /home/philip/coding/RavenEngine/vendor/glm
+# Install script for directory: /home/philip/coding/Crow-Works/Raven-Dependency-Repo/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/local/bin/llvm-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 

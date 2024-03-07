@@ -50,7 +50,7 @@ unset(_cmake_expected_targets)
 add_library(spirv-cross-glsl STATIC IMPORTED)
 
 set_target_properties(spirv-cross-glsl PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/philip/coding/RavenEngine/vendor/spirv_cross"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/philip/coding/Crow-Works/Raven-Dependency-Repo/spirv_cross"
   INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:spirv-cross-core>"
 )
 
@@ -58,7 +58,7 @@ set_target_properties(spirv-cross-glsl PROPERTIES
 set_property(TARGET spirv-cross-glsl APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(spirv-cross-glsl PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/philip/coding/RavenEngine/lib-Release/libspirv-cross-glsl.a"
+  IMPORTED_LOCATION_RELEASE "/home/philip/coding/Crow-Works/Raven-Dependency-Repo/spirv_cross/libspirv-cross-glsl.a"
   )
 
 # Make sure the targets which have been exported in some other

@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/philip/coding/RavenEngine/vendor/YAML
-BuildDirectory: /home/philip/coding/RavenEngine/vendor/YAML
+SourceDirectory: /home/philip/coding/Crow-Works/Raven-Dependency-Repo/YAML
+BuildDirectory: /home/philip/coding/Crow-Works/Raven-Dependency-Repo/YAML
 
 # Where to place the cost data store
 CostDataFile: 
@@ -14,7 +14,7 @@ CostDataFile:
 Site: rootendeavour
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-clang++
+BuildName: Linux-c++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/philip/coding/RavenEngine/vendor/YAML"
+ConfigureCommand: "/usr/bin/cmake" "/home/philip/coding/Crow-Works/Raven-Dependency-Repo/YAML"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
@@ -45,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: /usr/bin/git
+GITCommand: 
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -58,13 +58,13 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: /usr/bin/git
+UpdateCommand: 
 UpdateOptions: 
-UpdateType: git
+UpdateType: 
 
 # Compiler info
-Compiler: /usr/local/bin/clang++
-CompilerVersion: 19.0.0
+Compiler: /usr/bin/c++
+CompilerVersion: 13.2.1
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
