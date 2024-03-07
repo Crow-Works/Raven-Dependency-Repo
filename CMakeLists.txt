@@ -2,6 +2,16 @@ cmake_minimum_required(VERSION 3.18)
 
 project(RavenDependencies)
 
+include_directories(
+    Box2D/include/
+    imgui
+    glfw/include
+    spdlog/include
+    stb
+    glad/include
+    YAML/include
+)
+
 add_subdirectory(Box2D/)
 add_subdirectory(glad/)
 add_subdirectory(glfw/)
