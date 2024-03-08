@@ -12,6 +12,14 @@ include_directories(
     YAML/include
 )
 
+# Platform-specific settings for Windows
+if(WIN32)
+    # Windows-specific include directories
+    include_directories(
+        C:/VulkanSDK/1.3.261.1/Include
+    )
+endif()
+
 add_subdirectory(Box2D/)
 add_subdirectory(glad/)
 add_subdirectory(glfw/)
